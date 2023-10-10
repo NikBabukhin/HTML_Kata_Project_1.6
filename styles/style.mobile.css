@@ -1,18 +1,20 @@
 /* Main styles */
 @font-face {
     font-family: Lakes;
-    src: url("fonts/TTLakes-ExtraLight.ttf");
-    font-weight: 100;
+    src: url("fonts/TTLakes-DemiBold.ttf");
+    font-weight: bold;
 }
 
 @font-face {
     font-family: Lakes;
-    src: url("fonts/TTLakes-Medium.woff"), url("fonts/TTLakesCompressed-Black.woff");
+    src: url("fonts/TTLakes-Medium.woff");
     font-weight: normal;
 }
 
 @font-face {
-
+    font-family: Lakes;
+    src: url("fonts/TTLakes-Thin.woff");
+    font-weight: auto;
 }
 
 body {
@@ -97,13 +99,58 @@ button:hover {
 
 .main {
     width: 100%;
+    padding: 24px 16px;
+    box-sizing: border-box;
 }
 
 .main__header-text {
-    font-weight: 500;
+    margin: 0;
+    font-weight: bold;
     font-size: 28px;
     color: #1B1C21;
     letter-spacing: -0.6px;
+    position: relative;
 }
 
+.main__header-text:before {
+    content: "";
+    background-color: #41F6D7;
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    left: -16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main__nav {
+    padding: 24px 0;
+}
+
+.horizontal {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    margin: 0;
+    word-wrap: normal;
+}
+
+.horizontal__item-active {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.horizontal__item-text {
+    padding: 8px 9px 8px 17px;
+    height: 36px;
+    box-sizing: border-box;
+    background-color: inherit;
+    border: none;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #7E7E82;
+    white-space: nowrap;
+}
 
