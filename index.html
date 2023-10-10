@@ -2,31 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.mobile.css">
     <title>Kata HTML Project</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__burger"></div>
+<header class="header">
+    <div class="header__wrapper-helper">
+        <div class="header__burger">
+            <button class="header__burger-button header-button">
+                <img src="./src/image/burger.svg" alt="burger_menu"/>
+            </button>
+        </div>
         <div class="header__logo">
-            <a href="#"/>
+            <a href="#">
+                <img src="./src/image/logo.svg"/>
+            </a>
         </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__list-item">fix</li>
-                <li class="nav__list-item">search</li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="">
-            <h1 class="header"/>
-        </div>
-        <nav class="main__nav">
-            <ul class="">
-                <li class=""></li>
-            </ul>
-        </nav>
-    </main>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <button class="header-button">
+                    <img src="./src/image/repair.svg" alt="repair">
+                </button>
+            </li>
+            <li class="nav__list-item">
+                <button class="header-button">
+                    <img src="./src/image/checkstatus.svg" alt="check status">
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <div class="main__header">
+        <h1 class="main__header-text">Услуги и сервисы</h1>
+    </div>
+    <nav class="main__nav page-nav">
+        <ul class="page-nav__list">
+            <li class="page-nav__list-item">Ремонтируемые устройства</li>
+            <li class="page-nav__list-item">Ремонтируемые бренды</li>
+            <li class="page-nav__list-item">Цены на услуги</li>
+            <li class="page-nav__list-item">Адреса сервисных центров</li>
+            <li class="page-nav__list-item">Специальные цены</li>
+        </ul>
+    </nav>
+    <article class="page-content">
+        <section class="text-section">
+            <p class="text-section__text">Some Text</p>
+            <button class="text-section__button">Show More</button>
+        </section>
+    </article>
+
+</main>
 </body>
 </html>

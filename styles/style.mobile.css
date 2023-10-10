@@ -1,0 +1,109 @@
+/* Main styles */
+@font-face {
+    font-family: Lakes;
+    src: url("fonts/TTLakes-ExtraLight.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Lakes;
+    src: url("fonts/TTLakes-Medium.woff"), url("fonts/TTLakesCompressed-Black.woff");
+    font-weight: normal;
+}
+
+@font-face {
+
+}
+
+body {
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    max-width: 320px;
+    font-family: Lakes, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 24px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+
+.header__wrapper-helper {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__logo::after {
+    content: "";
+    border: 1px solid #EAEAEA;
+    height: 30px;
+    background-color: #EAEAEA;
+    position: absolute;
+    top: 20%;
+    right: -20%;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav__list li {
+    margin-right: 16px;
+}
+
+.nav__list li:last-child {
+    margin-right: 0;
+}
+
+
+/* Main content*/
+
+.main {
+    width: 100%;
+}
+
+.main__header-text {
+    font-weight: 500;
+    font-size: 28px;
+    color: #1B1C21;
+    letter-spacing: -0.6px;
+}
+
+
