@@ -1,27 +1,27 @@
 /* Main styles */
 @font-face {
-    font-family: Lakes;
-    src: url("fonts/TTLakes-DemiBold.ttf");
+    font-family: "Lakes";
+    src: local(Lakes), url("fonts/TTLakes-DemiBold.ttf");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: Lakes;
+    font-family: "Lakes";
     src: url("fonts/TTLakes-Medium.woff");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: Lakes;
-    src: url("fonts/TTLakes-Thin.woff");
-    font-weight: auto;
+    font-family: "Lakes";
+    src: url("fonts/TTLakes-DemiBold.woff");
+    font-weight: 200;
 }
 
 body {
     margin: 0 auto;
     background-color: #F8F8F8;
     max-width: 320px;
-    font-family: Lakes, sans-serif;
+    font-family: "Lakes", sans-serif;
 }
 
 a {
@@ -49,6 +49,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     height: 88px;
+    border-bottom: 1px solid #D9FFF5;
 }
 
 .header__wrapper-helper {
@@ -104,21 +105,25 @@ button:hover {
 }
 
 .main__header-text {
-    margin: 0;
+    margin: 0 auto;
     font-weight: bold;
     font-size: 28px;
     color: #1B1C21;
     letter-spacing: -0.6px;
     position: relative;
+    display: table-cell;
+    height: 40px;
+    vertical-align: middle;
 }
 
 .main__header-text:before {
     content: "";
     background-color: #41F6D7;
-    width: 4px;
     height: 40px;
+    width: 4px;
     position: absolute;
     left: -16px;
+    top: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -154,3 +159,25 @@ button:hover {
     white-space: nowrap;
 }
 
+/* Text Content in Main block */
+
+.page-content {
+    margin: 0;
+}
+
+.text-section {
+    font-weight: 200;
+    font-size: 14px;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+}
+
+.text-section__text {
+    margin: 0 0 16px 0;
+}
+
+.text-section__button {
+    font-family: inherit;
+    font-weight: normal;
+}
