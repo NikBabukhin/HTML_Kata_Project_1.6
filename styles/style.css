@@ -1,6 +1,43 @@
+/* Fonts */
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-DemiBold.eot');
+    src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'),
+    url('./fonts/TTLakes-DemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-DemiBold.woff') format('woff'),
+    url('./fonts/TTLakes-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-Medium.woff') format('woff'),
+    url('./fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Light.eot');
+    src: local('TT Lakes Light'), local('TTLakes-Light'),
+    url('./fonts/TTLakes-Light.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-Light.woff') format('woff'),
+    url('./fonts/TTLakes-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Main styles */
 body {
     margin: 0 auto;
+    background-color: #F8F8F8;
+    max-width: 320px;
+    font-family: 'TT Lakes', sans-serif;
 }
 
 a {
@@ -10,4 +47,175 @@ a {
 
 a:hover {
     cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 24px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header__wrapper-helper {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__logo::after {
+    content: "";
+    border: 1px solid #EAEAEA;
+    height: 30px;
+    background-color: #EAEAEA;
+    position: absolute;
+    top: 20%;
+    right: -20%;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav__list li {
+    margin-right: 16px;
+}
+
+.nav__list li:last-child {
+    margin-right: 0;
+}
+
+
+/* Main content*/
+.main {
+    width: 100%;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main__header-text {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1B1C21;
+    letter-spacing: -0.6px;
+    position: relative;
+    display: table-cell;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.main__header-text:before {
+    content: "";
+    background-color: #41F6D7;
+    height: 40px;
+    width: 4px;
+    position: absolute;
+    left: -16px;
+    top: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main__nav {
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+
+.horizontal {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    margin: 0;
+    word-wrap: normal;
+}
+
+.horizontal__item-active {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.horizontal__item-text {
+    font-family: inherit;
+    font-weight: 400;
+    padding: 8px 9px 8px 17px;
+    height: 36px;
+    box-sizing: border-box;
+    background-color: inherit;
+    border: none;
+    font-size: 16px;
+    color: #7E7E82;
+    white-space: nowrap;
+}
+
+
+/* Text Content in Main block */
+.page-content {
+    margin: 0;
+}
+
+.text-section {
+    font-weight: 400;
+    font-size: 14px;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+}
+
+.text-section__text {
+    margin: 0 0 16px 0;
+}
+
+.text-section__button {
+    border: none;
+    background-color: inherit;
+    display: inline-flex;
+    align-items: flex-end;
+    padding: 0;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin-bottom: 16px;
+}
+
+
+.text-section__button-text {
+    padding: 0 0 0 8px;
+}
+
+.office-image {
+    position: absolute;
+    left: 0;
 }
