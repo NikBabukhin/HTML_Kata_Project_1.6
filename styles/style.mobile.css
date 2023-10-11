@@ -709,8 +709,6 @@ button:hover {
 
 .main__nav {
     padding: 24px 0;
-    width: calc(100vw - 5vw);
-    overflow: visible;
     box-sizing: border-box;
 }
 
