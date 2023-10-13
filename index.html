@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,7 +7,7 @@
     <title>Kata HTML Project</title>
 </head>
 <body>
-<header class="header">
+<header class="header except-desktop">
     <div class="header__wrapper-helper">
         <div class="header__burger">
             <button class="header__burger-button header-button">
@@ -38,7 +38,7 @@
                 </button>
             </li>
         </ul>
-        <ul class="nav__list">
+        <ul class="nav__list nav__list-mobile">
             <li class="nav__list-item">
                 <button class="header-button">
                     <img src="./src/image/repair.svg" alt="repair">
@@ -52,9 +52,30 @@
         </ul>
     </nav>
 </header>
+<header class="only-desktop header header-desktop">
+    <div class="page-header">
+        <h1 class="page-header-text">Услуги и сервисы</h1>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <span>Оставить заявку</span>
+                <button class="header-button">
+                    <img src="./src/image/repair.svg" alt="repair">
+                </button>
+            </li>
+            <li class="nav__list-item">
+                <span>Статус ремонта</span>
+                <button class="header-button">
+                    <img src="./src/image/checkstatus.svg" alt="check status">
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
 <main class="main">
-    <div class="main__header">
-        <h1 class="main__header-text">Услуги и сервисы</h1>
+    <div class="page-header except-desktop">
+        <h1 class="page-header-text">Услуги и сервисы</h1>
     </div>
     <nav class="main__nav page-nav">
         <ul class="page-nav__list horizontal">
@@ -73,19 +94,24 @@
             <li class="page-nav__list-item horizontal__item">
                 <button class="horizontal__item-text">Специальные цены</button>
             </li>
+            <li class="page-nav__list-item horizontal__item">
+                <button class="horizontal__item-text">Отзывы</button>
+            </li>
         </ul>
     </nav>
     <article class="page-content">
         <section class="text-section">
             <p class="text-section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
             <p class="text-section__text only-laptop">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+            <p class="text-section__text only-desktop">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.<br/> Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
             <button class="text-section__button">
                 <img src="src/image/expand.svg" alt="show more" class="text-section__button-image">
                 <span class="text-section__button-text">Читать далее</span>
             </button>
         </section>
-        <img src="./src/image/PhotoOfficeMobile.png" alt="office photo" class="office-image office-image__mobile only-mobile"/>
-        <img src="./src/image/PhotoOfficeLaptop.png" alt="office photo" class="office-image office-image__laptop only-laptop"/>
+        <img src="./src/image/PhotoOfficeMobile.png" alt="office photo" class="office-image office-image__mobile only-mobile" width="320px" height="176px"/>
+        <img src="./src/image/PhotoOfficeLaptop.png" alt="office photo" class="office-image office-image__laptop only-laptop" width="360px" height="208px"/>
+        <img src="./src/image/PhotoOfficeDesktop.png" alt="office photo" class="office-image office-image__desktop only-desktop" width="532px" height="307px"/>
 
     </article>
 
