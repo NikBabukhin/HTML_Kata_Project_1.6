@@ -44,6 +44,10 @@
 
     --black-font-color: #1B1C21;
     --grey-font-color: #7E7E82;
+
+    --main-header-h1-font-size: 28px;
+    --main-font-size-normal: 16px;
+    --main-font-size-small-normal: 14px;
 }
 
 
@@ -201,10 +205,14 @@ button:hover {
     position: relative;
 }
 
+@media (min-width: 760px) {
+
+}
+
 .main__header-text {
     margin: 0 auto;
     font-weight: 700;
-    font-size: 28px;
+    font-size: var(--main-header-h1-font-size);
     color: var(--black-font-color);
     letter-spacing: -0.6px;
     position: relative;
@@ -219,11 +227,12 @@ button:hover {
     height: 40px;
     width: 4px;
     position: absolute;
-    left: -16px;
+    left: calc(-1 * var(--main-page-padding));
     top: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 
 .main__nav {
     padding: 24px 0;
@@ -253,7 +262,7 @@ button:hover {
     box-sizing: border-box;
     background-color: inherit;
     border: none;
-    font-size: 16px;
+    font-size: var(--main-font-size-normal);
     color: var(--grey-font-color);
     white-space: nowrap;
 }
@@ -264,9 +273,10 @@ button:hover {
     margin: 0;
 }
 
+
 .text-section {
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--main-font-size-small-normal);
     color: var(--black-font-color);
     letter-spacing: 0.2px;
     word-spacing: 1px;
@@ -285,7 +295,7 @@ button:hover {
 
     font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--main-font-size-normal);
     letter-spacing: -0.2px;
     color: var(--black-font-color);
     margin-bottom: 16px;
@@ -299,4 +309,25 @@ button:hover {
 .office-image {
     position: absolute;
     left: 0;
+}
+
+
+@media (min-width: 760px) {
+    .page-content {
+        display: flex;
+    }
+
+    .office-image {
+        position: static;
+        float: right;
+        border-radius: 5px;
+    }
+
+    .only-mobile {
+        display: none;
+    }
+
+    .text-section {
+        margin-right: 48px;
+    }
 }
