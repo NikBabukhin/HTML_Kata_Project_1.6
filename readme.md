@@ -1,3 +1,3 @@
 Test project for Web Core Course Kata Academy
 
-[Deploy version](https://nikbabukhin.github.io/HTML_Kata_Project/)
+<a href="https://nikbabukhin.github.io/HTML_Kata_Project/" target="_blank">Deploy version</a>[Deploy version]()
