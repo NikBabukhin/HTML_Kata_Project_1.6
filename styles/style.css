@@ -202,9 +202,6 @@ button:hover {
 
 }
 
-
-
-
 /* Main content*/
 .main {
     width: 100%;
@@ -395,5 +392,17 @@ button:hover {
 
     .text-section {
         margin-right: 36px;
+    }
+
+    .header {
+        padding: 42px var(--main-page-padding) 0 var(--main-page-padding);
+    }
+
+    .main {
+        padding: 8px var(--main-page-padding);
+    }
+
+    .main__nav {
+        padding: 0;
     }
 }
