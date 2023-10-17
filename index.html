@@ -2,56 +2,57 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="styles/style.css">
     <title>Kata HTML Project</title>
 </head>
-<body>
+<body class="body">
+
 <header>
     <div class="header header__wrapper except-desktop">
         <div class="header__wrapper-helper">
-        <div class="header__burger">
-            <button class="header__burger-button header-button">
-                <img src="./src/image/burger.svg" alt="burger_menu"/>
-            </button>
+            <div class="header__burger">
+                <button class="header__burger-button header-button">
+                    <img src="./src/image/burger.svg" alt="burger_menu"/>
+                </button>
+            </div>
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./src/image/logo.svg" alt="company logo"/>
+                </a>
+            </div>
         </div>
-        <div class="header__logo">
-            <a href="#">
-                <img src="./src/image/logo.svg" alt="company logo"/>
-            </a>
-        </div>
-    </div>
         <nav class="nav">
-        <ul class="nav__list nav__list-laptop only-laptop">
-            <li class="nav__list-item">
-                <button class="header-button">
-                    <img src="./src/image/call.svg" alt="call">
-                </button>
-            </li>
-            <li class="nav__list-item">
-                <button class="header-button">
-                    <img src="./src/image/chat.svg" alt="chat">
-                </button>
-            </li>
-            <li class="nav__list-item">
-                <button class="header-button">
-                    <img src="./src/image/profile.svg" alt="profile">
-                </button>
-            </li>
-        </ul>
-        <ul class="nav__list nav__list-mobile">
-            <li class="nav__list-item">
-                <button class="header-button">
-                    <img src="./src/image/repair.svg" alt="repair">
-                </button>
-            </li>
-            <li class="nav__list-item">
-                <button class="header-button">
-                    <img src="./src/image/checkstatus.svg" alt="check status">
-                </button>
-            </li>
-        </ul>
-    </nav>
+            <ul class="nav__list nav__list-laptop only-laptop">
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/call.svg" alt="call">
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/chat.svg" alt="chat">
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/profile.svg" alt="profile">
+                    </button>
+                </li>
+            </ul>
+            <ul class="nav__list nav__list-mobile">
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/repair.svg" alt="repair">
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/checkstatus.svg" alt="check status">
+                    </button>
+                </li>
+            </ul>
+        </nav>
     </div>
     <div class=" header header__wrapper header-desktop only-desktop">
         <div class="page-header">
@@ -103,20 +104,45 @@
     </nav>
     <article class="page-content">
         <section class="text-section">
-            <p class="text-section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <p class="text-section__text only-laptop">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-            <p class="text-section__text only-desktop">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.<br/> Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            <p class="text-section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
+                нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+            <p class="text-section__text only-laptop">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера</p>
+            <p class="text-section__text only-desktop">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных клиентов.<br/> Мы гордимся тем, что к нам
+                обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
             <button class="text-section__button">
                 <img src="src/image/expand.svg" alt="show more" class="text-section__button-image">
                 <span class="text-section__button-text">Читать далее</span>
             </button>
         </section>
-        <img src="./src/image/PhotoOfficeMobile.png" alt="office photo" class="office-image office-image__mobile only-mobile"/>
-        <img src="./src/image/PhotoOfficeLaptop.png" alt="office photo" class="office-image office-image__laptop only-laptop"/>
-        <img src="./src/image/PhotoOfficeDesktop.png" alt="office photo" class="office-image office-image__desktop only-desktop"/>
+        <img src="./src/image/PhotoOfficeMobile.png" alt="office photo"
+             class="office-image office-image__mobile only-mobile"/>
+        <img src="./src/image/PhotoOfficeLaptop.png" alt="office photo"
+             class="office-image office-image__laptop only-laptop"/>
+        <img src="./src/image/PhotoOfficeDesktop.png" alt="office photo"
+             class="office-image office-image__desktop only-desktop"/>
 
     </article>
-
 </main>
+<aside class="burger except-desktop burger-open">
+    <container class="burger__container">
+        <div class="burger-header">
+            <div class="burger-header__group--item burger-header__controls">
+                <button class="burger-header__button-close header-button">
+                    <img src="src/image/burgerClose.svg" alt="close">
+                </button>
+                <img src="src/image/logo.svg" alt="logo"/>
+            </div>
+            <div class="burger-header__group--item burger-header__search">
+                <button class="burger-header__button-search header-button">
+                    <img src="src/image/search.svg" alt="search">
+                </button>
+            </div>
+        </div>
+        some ul
+        some footer
+    </container>
+</aside>
 </body>
 </html>

@@ -9,7 +9,6 @@
     font-weight: 600;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'TT Lakes';
     src: url('./fonts/TTLakes-Medium.eot');
@@ -20,7 +19,6 @@
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'TT Lakes';
     src: url('./fonts/TTLakes-Light.eot');
@@ -50,17 +48,15 @@
     --main-font-size-small-normal: 14px;
 }
 
-
-/* Main Media padding */
-
-
 /* Main styles */
-body {
+.body {
     margin: 0 auto;
     background-color: var(--main-bg-color);
     min-width: 320px;
     font-family: 'TT Lakes', sans-serif;
+    position: relative;
 }
+
 
 a {
     text-decoration: none;
@@ -88,6 +84,7 @@ button:hover {
     align-items: center;
     height: 88px;
     border-bottom: 1px solid var(--border-lightBlue);
+    position: relative;
 }
 
 .header-desktop {
@@ -108,6 +105,13 @@ button:hover {
     padding: 0;
     width: 40px;
     height: 40px;
+    transition: all 0.2s ease;
+}
+
+.header-button:hover {
+    fill: black;
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .header__logo {
@@ -201,7 +205,7 @@ button:hover {
     width: 100%;
     padding: 24px var(--main-page-padding);
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
 }
 
 .page-header-text {
@@ -325,6 +329,48 @@ button:hover {
 }
 
 
+/* Burger menu (aside)*/
+.burger {
+    position: fixed;
+    width: 320px;
+    top: 0;
+    left: -320px;
+    background-color: var(--main-bg-color-white);
+    height: 100%;
+    transition: all 0.5s linear;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.burger::-webkit-scrollbar {
+    display: none;
+}
+
+.burger-open {
+    transform: translateX(320px);
+}
+
+.burger-header {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 47px;
+}
+
+.burger-header__group--item{
+    display: flex;
+    align-items: center;
+}
+
+.burger-header__controls {
+    width: 150px;
+    justify-content: space-between;
+}
+
+
+
+
+/* Main media queries */
 @media (min-width: 760px) {
     .page-content {
         display: flex;
@@ -344,7 +390,6 @@ button:hover {
         margin-right: 48px;
     }
 }
-
 @media (max-width: 759px) {
     :root {
         --main-page-padding: 16px;
@@ -362,7 +407,6 @@ button:hover {
         display: none
     }
 }
-
 @media (max-width: 1119px) and (min-width: 760px) {
     :root {
         --main-page-padding: 24px;
@@ -376,7 +420,6 @@ button:hover {
         display: none;
     }
 }
-
 @media (min-width: 1120px) {
     :root {
         --main-page-padding: 32px;
@@ -410,3 +453,5 @@ button:hover {
         padding-top: 0;
     }
 }
+
+
