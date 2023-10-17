@@ -7,8 +7,9 @@
     <title>Kata HTML Project</title>
 </head>
 <body>
-<header class="header except-desktop">
-    <div class="header__wrapper-helper">
+<header>
+    <div class="header header__wrapper except-desktop">
+        <div class="header__wrapper-helper">
         <div class="header__burger">
             <button class="header__burger-button header-button">
                 <img src="./src/image/burger.svg" alt="burger_menu"/>
@@ -20,7 +21,7 @@
             </a>
         </div>
     </div>
-    <nav class="nav">
+        <nav class="nav">
         <ul class="nav__list nav__list-laptop only-laptop">
             <li class="nav__list-item">
                 <button class="header-button">
@@ -51,27 +52,28 @@
             </li>
         </ul>
     </nav>
-</header>
-<header class="only-desktop header header-desktop">
-    <div class="page-header">
-        <h1 class="page-header-text">Услуги и сервисы</h1>
     </div>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <span>Оставить заявку</span>
-                <button class="header-button">
-                    <img src="./src/image/repair.svg" alt="repair">
-                </button>
-            </li>
-            <li class="nav__list-item">
-                <span>Статус ремонта</span>
-                <button class="header-button">
-                    <img src="./src/image/checkstatus.svg" alt="check status">
-                </button>
-            </li>
-        </ul>
-    </nav>
+    <div class=" header header__wrapper header-desktop only-desktop">
+        <div class="page-header">
+            <h1 class="page-header-text">Услуги и сервисы</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <span>Оставить заявку</span>
+                    <button class="header-button">
+                        <img src="./src/image/repair.svg" alt="repair">
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <span>Статус ремонта</span>
+                    <button class="header-button">
+                        <img src="./src/image/checkstatus.svg" alt="check status">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main class="main">
     <div class="page-header except-desktop">
@@ -109,9 +111,9 @@
                 <span class="text-section__button-text">Читать далее</span>
             </button>
         </section>
-        <img src="./src/image/PhotoOfficeMobile.png" alt="office photo" class="office-image office-image__mobile only-mobile" width="320px" height="176px"/>
-        <img src="./src/image/PhotoOfficeLaptop.png" alt="office photo" class="office-image office-image__laptop only-laptop" width="360px" height="208px"/>
-        <img src="./src/image/PhotoOfficeDesktop.png" alt="office photo" class="office-image office-image__desktop only-desktop" width="532px" height="307px"/>
+        <img src="./src/image/PhotoOfficeMobile.png" alt="office photo" class="office-image office-image__mobile only-mobile"/>
+        <img src="./src/image/PhotoOfficeLaptop.png" alt="office photo" class="office-image office-image__laptop only-laptop"/>
+        <img src="./src/image/PhotoOfficeDesktop.png" alt="office photo" class="office-image office-image__desktop only-desktop"/>
 
     </article>
 

@@ -178,12 +178,6 @@ button:hover {
     }
 }
 
-@media (max-width: 760px) {
-    .only-laptop {
-        display: none;
-    }
-}
-
 @media (min-width: 1120px) {
     .nav__list li {
         margin-right: 32px;
@@ -247,7 +241,14 @@ button:hover {
     overflow-x: scroll;
     margin: 0;
     word-wrap: normal;
+    -ms-overflow-style: none;
 }
+
+.horizontal::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 @media (min-width: 1120px) {
     .horizontal {
@@ -256,11 +257,13 @@ button:hover {
     }
 }
 
-
+.horizontal__item {
+    border: 2px solid var(--main-bg-color);
+    border-radius: 6px;
+}
 .horizontal__item-active {
     background-color: var(--main-bg-color-white);
-    border: 2px solid var(--border-blue);
-    border-radius: 6px;
+    border-color: var(--border-blue);
 }
 
 .horizontal__item-text {
@@ -317,7 +320,8 @@ button:hover {
 
 .office-image {
     position: absolute;
-    left: 0;
+    width: 100vw;
+    margin-left: -16px;
 }
 
 
