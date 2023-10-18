@@ -334,10 +334,10 @@ button:hover {
     position: fixed;
     width: 320px;
     top: 0;
-    left: -320px;
+    left: -350px;
     background-color: var(--main-bg-color-white);
     height: 100%;
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     overflow-y: scroll;
     -ms-overflow-style: none;
     -webkit-box-shadow: 12px 0 17px 0 rgba(34, 60, 80, 0.6);
@@ -350,7 +350,7 @@ button:hover {
 }
 
 .burger-open {
-    transform: translateX(320px);
+    transform: translateX(350px);
 }
 
 .burger-header {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js" defer></script>
     <title>Kata HTML Project</title>
 </head>
 <body class="body">
@@ -12,7 +13,7 @@
     <div class="header header__wrapper except-desktop">
         <div class="header__wrapper-helper">
             <div class="header__burger">
-                <button class="header__burger-button header-button">
+                <button class="header__burger-button header-button" id="burger_open">
                     <img src="./src/image/burger.svg" alt="burger_menu"/>
                 </button>
             </div>
@@ -125,11 +126,11 @@
 
     </article>
 </main>
-<aside class="burger except-desktop burger-open">
+<aside class="burger except-desktop" id="burger_menu">
     <div class="burger__container">
         <div class="burger-header">
             <div class="burger-header__group--item burger-header__controls">
-                <button class="burger-header__button-close header-button">
+                <button class="burger-header__button-close header-button" id="burger_close">
                     <img src="src/image/burgerClose.svg" alt="close">
                 </button>
                 <img src="src/image/logo.svg" alt="logo"/>
