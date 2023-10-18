@@ -126,7 +126,7 @@
     </article>
 </main>
 <aside class="burger except-desktop burger-open">
-    <container class="burger__container">
+    <div class="burger__container">
         <div class="burger-header">
             <div class="burger-header__group--item burger-header__controls">
                 <button class="burger-header__button-close header-button">
@@ -140,9 +140,58 @@
                 </button>
             </div>
         </div>
-        some ul
-        some footer
-    </container>
+        <ul class="burger__list">
+            <li class="burger__list-item burger__list-item-active">
+                <a href="#">Услуги и сервисы</a>
+            </li>
+            <li class="burger__list-item">
+                <a href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="burger__list-item">
+                <a href="#">Продавцам техники</a>
+            </li>
+            <li class="burger__list-item">
+                <a href="#">Партнерам</a>
+            </li>
+            <li class="burger__list-item">
+                <a href="#">Производителям</a>
+            </li>
+            <li class="burger__list-item">
+                <a href="#">Наши сервисные центры</a>
+            </li>
+            <li class="burger__list-item">
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+        <div class="burger__footer">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/call.svg" alt="call">
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/chat.svg" alt="chat">
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button class="header-button">
+                        <img src="./src/image/profile.svg" alt="profile">
+                    </button>
+                </li>
+            </ul>
+            <address class="burger__footer-address address">
+                <p class="address__email">mail@cps.com</p>
+                <p class="address__phone"><b>8 800 890 8900</b></p>
+            </address>
+            <div class="burger__footer-language language-switch">
+                <span class="language-switch--item language-switch--active-item">RU</span>
+                <span class="language-switch--item">EN</span>
+                <span class="language-switch--item">CH</span>
+            </div>
+        </div>
+    </div>
 </aside>
 </body>
 </html>
