@@ -203,7 +203,7 @@ button:hover {
 /* Main content*/
 .main {
     width: 100%;
-    padding: 24px var(--main-page-padding);
+    padding: 24px 0 24px var(--main-page-padding);
     box-sizing: border-box;
     position: absolute;
 }
@@ -236,6 +236,16 @@ button:hover {
 .main__nav {
     padding: 24px 0;
     box-sizing: border-box;
+    position: relative;
+}
+
+.main__nav:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgba(248,248,248, 0) 0%, rgba(248,248,248, 1) 100%);
+    width: 24px;
+    height: 40px;
+    right: 0;
 }
 
 .horizontal {
@@ -287,6 +297,7 @@ button:hover {
 /* Text Content in Main block */
 .page-content {
     margin: 0;
+    padding-right: var(--main-page-padding);
 }
 
 
@@ -442,17 +453,31 @@ button:hover {
     font-size: 24px;
 }
 
-.language-switch--item {
+.language-switch__list--item {
     font-weight: 500;
     color: inherit;
 }
 
-.language-switch--item:hover {
-    cursor: pointer;
+.language-switch__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.language-switch__list>li {
+    margin-right: 7px;
+}
+
+.language-switch__list>li:last-child {
+    margin-right: 0;
+}
+
+.language-switch__list--item:hover {
     color: var(--grey-font-color);
 }
 
-.language-switch--active-item {
+.language-switch__list--active-item {
     color: var(--grey-font-color)
 }
 

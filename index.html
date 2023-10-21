@@ -59,7 +59,7 @@
         <div class="page-header">
             <h1 class="page-header-text">Услуги и сервисы</h1>
         </div>
-        <nav class="nav">
+        <div class="nav">
             <ul class="nav__list">
                 <li class="nav__list-item">
                     <span>Оставить заявку</span>
@@ -74,14 +74,14 @@
                     </button>
                 </li>
             </ul>
-        </nav>
+        </div>
     </div>
 </header>
 <main class="main">
     <div class="page-header except-desktop">
         <h1 class="page-header-text">Услуги и сервисы</h1>
     </div>
-    <nav class="main__nav page-nav">
+    <div class="main__nav page-nav">
         <ul class="page-nav__list horizontal">
             <li class="page-nav__list-item horizontal__item horizontal__item-active">
                 <button class="horizontal__item-text">Ремонтируемые устройства</button>
@@ -102,7 +102,7 @@
                 <button class="horizontal__item-text">Отзывы</button>
             </li>
         </ul>
-    </nav>
+    </div>
     <article class="page-content">
         <section class="text-section">
             <p class="text-section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
@@ -127,7 +127,7 @@
     </article>
 </main>
 <aside class="burger except-desktop" id="burger_menu">
-    <div class="burger__container">
+    <article class="burger__container">
         <div class="burger-header">
             <div class="burger-header__group--item burger-header__controls">
                 <button class="burger-header__button-close header-button" id="burger_close">
@@ -187,12 +187,14 @@
                 <p class="address__phone"><b>8 800 890 8900</b></p>
             </address>
             <div class="burger__footer-language language-switch">
-                <span class="language-switch--item language-switch--active-item">RU</span>
-                <span class="language-switch--item">EN</span>
-                <span class="language-switch--item">CH</span>
+                <ul class="language-switch__list">
+                    <li><a class="language-switch__list--item language-switch__list--active-item">RU</a></li>
+                    <li><a class="language-switch__list--item">EN</a></li>
+                    <li><a class="language-switch__list--item">CH</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </article>
 </aside>
 </body>
 </html>
