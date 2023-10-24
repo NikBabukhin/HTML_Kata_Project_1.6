@@ -344,22 +344,20 @@ button:hover {
 .burger {
     position: fixed;
     width: 320px;
+    min-height: 710px;
     top: 0;
     left: -350px;
     background-color: var(--main-bg-color-white);
     height: 100%;
     transition: all 0.3s linear;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
     -webkit-box-shadow: 12px 0 17px 0 rgba(34, 60, 80, 0.6);
     -moz-box-shadow: 12px 0 17px 0 rgba(34, 60, 80, 0.6);
     box-shadow: 12px 0 17px 0 rgba(34, 60, 80, 0.6);
 }
 
-.burger::-webkit-scrollbar {
-    display: none;
+.burger__container {
+    height: 100%;
 }
-
 .burger-open {
     transform: translateX(350px);
 }
@@ -368,7 +366,7 @@ button:hover {
     padding: 20px 24px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 47px;
+    margin-bottom: 4.7vh;
 }
 
 .burger-header__group--item{
@@ -389,11 +387,10 @@ button:hover {
 }
 
 .burger__list-item {
-    margin-bottom: 32px;
+    margin-bottom: 3.2vh;
     padding-left: 24px;
     position: relative;
     height: 32px;
-    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -431,17 +428,18 @@ button:hover {
 
 .burger__footer {
     position: absolute;
-    padding: 0 0 32px 24px;
+    padding: 0 0 3.2vh 24px;
     bottom: 0;
 }
 
 .address {
     font-style: normal;
-    margin-bottom: 40px;
+    margin-bottom: 4.0vh;
 }
 
-.address p {
+.address a {
     margin: 0 0 12px 0;
+    display: inline-block;
 }
 
 .address__email {
