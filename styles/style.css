@@ -108,6 +108,33 @@ button:hover {
     transition: all 0.2s ease;
 }
 
+/* Background images for buttons */
+.burger-background {
+    background: url("../src/image/burger.svg");
+}
+.call-background {
+    background: url("../src/image/call.svg");
+}
+.chat-background {
+    background: url("../src/image/chat.svg");
+}
+.profile-background {
+    background: url("../src/image/profile.svg");
+}
+.repair-background {
+    background: url("../src/image/repair.svg");
+}
+.checkstatus-background {
+    background: url("../src/image/checkstatus.svg");
+}
+.close-background {
+    background: url("../src/image/burgerClose.svg");
+}
+.search-background {
+    background: url("../src/image/search.svg");
+}
+/* End of background images for buttons */
+
 .header-button:hover {
     fill: black;
     opacity: 0.5;
@@ -203,9 +230,13 @@ button:hover {
 /* Main content*/
 .main {
     width: 100%;
-    padding: 24px 0 24px var(--main-page-padding);
+    padding: 24px 0;
     box-sizing: border-box;
     position: absolute;
+}
+
+.page-header {
+    padding-left: var(--main-page-padding);
 }
 
 .page-header-text {
@@ -234,7 +265,7 @@ button:hover {
 
 
 .main__nav {
-    padding: 24px 0;
+    padding: 24px 0 24px var(--main-page-padding);
     box-sizing: border-box;
     position: relative;
 }
@@ -297,11 +328,11 @@ button:hover {
 /* Text Content in Main block */
 .page-content {
     margin: 0;
-    padding-right: var(--main-page-padding);
 }
 
 
 .text-section {
+    padding-left: var(--main-page-padding);
     font-weight: 400;
     font-size: var(--main-font-size-small-normal);
     color: var(--black-font-color);
@@ -334,9 +365,7 @@ button:hover {
 }
 
 .office-image {
-    position: absolute;
     width: 100vw;
-    margin-left: -16px;
 }
 
 
@@ -488,9 +517,8 @@ button:hover {
     }
 
     .office-image {
-        position: static;
-        float: right;
         border-radius: 5px;
+        padding-right: var(--main-page-padding);
     }
 
     .only-mobile {
@@ -557,7 +585,7 @@ button:hover {
     }
 
     .main {
-        padding: 8px var(--main-page-padding);
+        padding: 8px 0;
     }
 
     .main__nav {
