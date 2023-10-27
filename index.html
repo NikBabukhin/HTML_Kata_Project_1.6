@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="styles/style.css">
+
     <script src="script.js" defer></script>
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js" defer></script>
+
     <title>Kata HTML Project</title>
 </head>
 <body class="body">
@@ -65,7 +74,7 @@
     <div class="page-header except-desktop">
         <h1 class="page-header-text">Услуги и сервисы</h1>
     </div>
-    <div class="main__nav page-nav">
+    <div class="main__nav page-nav transparent-helper">
         <ul class="page-nav__list horizontal">
             <li class="page-nav__list-item horizontal__item horizontal__item-active">
                 <button class="horizontal__item-text">Ремонтируемые устройства</button>
@@ -109,7 +118,115 @@
              class="office-image office-image__desktop only-desktop"/>
 
     </article>
+    <section class="section services">
+        <div class="section__title">
+            <h6 class="section__title-text">Ремонт техники различных брендов</h6>
+        </div>
+        <div class="section__content only-mobile">
+            <!--        Slider-->
+            <div class="swiper transparent-helper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/lenovo.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/samsung.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/apple.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/Borsch.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/samsung.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/apple.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/hp.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/acer.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="company-card">
+                            <div class="company-card__logo">
+                                <img src="src/brands/lenovo.png">
+                            </div>
+                            <button class="header-button go-background">
+                                <a href="https://github.com/NikBabukhin/HTML_Kata_Project" target="_blank"></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination pagination"></div>
+            </div>
+            <!--        End of slider-->
+        </div>
+    </section>
 </main>
+
 <aside class="burger except-desktop" id="burger_menu">
     <article class="burger__container">
         <div class="burger-header">
@@ -170,5 +287,6 @@
         </div>
     </article>
 </aside>
+
 </body>
 </html>

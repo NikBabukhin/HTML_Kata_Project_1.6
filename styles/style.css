@@ -57,7 +57,6 @@
     position: relative;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -72,6 +71,16 @@ button:hover {
     overflow: hidden;
 }
 
+/* Helpers */
+.transparent-helper:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgba(248,248,248, 0) 0%, rgba(248,248,248, 1) 100%);
+    width: 24px;
+    height: 100%;
+    z-index: 100;
+    right: 0;
+}
 
 /* Header */
 .header {
@@ -107,6 +116,11 @@ button:hover {
     height: 40px;
     transition: all 0.2s ease;
 }
+.header-button a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
 
 /* Background images for buttons */
 .burger-background {
@@ -132,6 +146,9 @@ button:hover {
 }
 .search-background {
     background: url("../src/image/search.svg");
+}
+.go-background {
+ background: url("../src/image/go.svg");
 }
 /* End of background images for buttons */
 
@@ -270,15 +287,6 @@ button:hover {
     position: relative;
 }
 
-.main__nav:before {
-    content: "";
-    position: absolute;
-    background: linear-gradient(90deg, rgba(248,248,248, 0) 0%, rgba(248,248,248, 1) 100%);
-    width: 24px;
-    height: 40px;
-    right: 0;
-}
-
 .horizontal {
     padding: 0;
     list-style: none;
@@ -369,6 +377,41 @@ button:hover {
 }
 
 
+/* Section */
+.section {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.section__title {
+    padding: var(--main-page-padding);
+    background: linear-gradient(90deg, var(--main-bg-color) 1%, var(--main-bg-color-white) 100%);
+    border-top: 1px solid var(--border-lightBlue);
+}
+
+.section__title-text {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    margin: 0;
+}
+
+.company-card {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-bg-color-white);
+    border-radius: 5px;
+    height: 72px;
+}
+
+.company-card__logo img{
+    display: block;
+    margin: auto 0;
+}
+
 /* Burger menu (aside)*/
 .burger {
     position: fixed;
@@ -378,6 +421,7 @@ button:hover {
     left: -350px;
     background-color: var(--main-bg-color-white);
     height: 100%;
+    z-index: 10;
     transition: all 0.3s linear;
     -webkit-box-shadow: 12px 0 17px 0 rgba(34, 60, 80, 0.6);
     -moz-box-shadow: 12px 0 17px 0 rgba(34, 60, 80, 0.6);
@@ -592,3 +636,30 @@ button:hover {
 }
 
 
+/*Swiper slider*/
+.swiper {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+
+.swiper-slide {
+    margin-top: var(--main-page-padding);
+}
+
+.swiper-wrapper {
+    padding-left: var(--main-page-padding);
+    width: 320px;
+}
+
+
+.swiper>.pagination {
+    position: relative;
+    margin-top: var(--main-page-padding);
+}
+
+.test-slider-item {
+    border: 1px solid red;
+    width: 238px;
+    height: 70px;
+}
