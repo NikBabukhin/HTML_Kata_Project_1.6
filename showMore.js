@@ -1,7 +1,6 @@
 const wrapper = document.getElementById('brands-wrapper-except-mobile')
 const wrapperChild = wrapper.children
-const buttonAdd = document.getElementById('add')
-const buttonDelete = document.getElementById('delete')
+const buttonShow = document.getElementById('add-brands')
 const imagesArr = ['lenovo', 'samsung', 'apple', 'acer', 'hp', 'Borsch']
 const initialSlidesLength = 6;
 const allProductsLength = 11;
@@ -20,6 +19,7 @@ const createNewCard = (element, imageSrc) => {
     const cardButton = document.createElement('button')
     cardButton.classList.add('header-button')
     cardButton.classList.add('go-background')
+    cardButton.innerHTML = `<a href="https://github.com/NikBabukhin/" target="_blank"></a>`
 
     productCard.appendChild(cardLogo)
     productCard.appendChild(cardButton)
@@ -44,9 +44,12 @@ const showLess = (initialCount, finalCount) => {
 
 const onClickHandler = (initialSlidesLength, allProductsLength) => {
     const currentLength = wrapper.children.length;
+    const buttonSpan = buttonShow.querySelector('.show-more__button-text')
     if (currentLength>=allProductsLength) {
+        buttonSpan.textContent = 'Скрыть';
         return showLess(initialSlidesLength, allProductsLength)
     } else {
+        buttonSpan.textContent = 'Показать все';
         return showMore(initialSlidesLength, allProductsLength, wrapper)
     }
 }
@@ -56,4 +59,4 @@ for (let i=0;i<initialSlidesLength;i++) {
 }
 
 
-buttonAdd.addEventListener('click', () => onClickHandler(initialSlidesLength, allProductsLength))
+buttonShow.addEventListener('click', () => onClickHandler(initialSlidesLength, allProductsLength))

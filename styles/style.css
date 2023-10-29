@@ -352,7 +352,7 @@ button:hover {
     margin: 0 0 16px 0;
 }
 
-.text-section__button {
+.show-more__button {
     border: none;
     background-color: inherit;
     display: inline-flex;
@@ -368,7 +368,7 @@ button:hover {
 }
 
 
-.text-section__button-text {
+.show-more__button-text {
     padding: 0 0 0 8px;
 }
 
@@ -424,6 +424,10 @@ button:hover {
 .company-card--laptop {
     margin-right: var(--main-page-padding);
     margin-bottom: var(--main-page-padding);
+}
+
+.section__button {
+    padding-left: var(--main-page-padding);
 }
 
 /* Burger menu (aside)*/
