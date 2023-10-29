@@ -46,10 +46,10 @@ const onClickHandler = (initialSlidesLength, allProductsLength) => {
     const currentLength = wrapper.children.length;
     const buttonSpan = buttonShow.querySelector('.show-more__button-text')
     if (currentLength>=allProductsLength) {
-        buttonSpan.textContent = 'Скрыть';
+        buttonSpan.textContent = 'Показать все';
         return showLess(initialSlidesLength, allProductsLength)
     } else {
-        buttonSpan.textContent = 'Показать все';
+        buttonSpan.textContent = 'Скрыть';
         return showMore(initialSlidesLength, allProductsLength, wrapper)
     }
 }
