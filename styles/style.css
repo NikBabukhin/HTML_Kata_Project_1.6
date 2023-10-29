@@ -397,6 +397,14 @@ button:hover {
     margin: 0;
 }
 
+.brands-wrapper {
+    padding: var(--main-page-padding);
+    padding-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .company-card {
     padding: 0 16px;
     display: flex;
@@ -405,11 +413,17 @@ button:hover {
     background-color: var(--main-bg-color-white);
     border-radius: 5px;
     height: 72px;
+    min-width: 192px;
 }
 
 .company-card__logo img{
     display: block;
     margin: auto 0;
+}
+
+.company-card--laptop {
+    margin-right: var(--main-page-padding);
+    margin-bottom: var(--main-page-padding);
 }
 
 /* Burger menu (aside)*/
@@ -434,19 +448,16 @@ button:hover {
 .burger-open {
     transform: translateX(350px);
 }
-
 .burger-header {
     padding: 20px 24px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 4.7vh;
 }
-
 .burger-header__group--item{
     display: flex;
     align-items: center;
 }
-
 .burger-header__controls {
     width: 155px;
     justify-content: space-between;
@@ -652,14 +663,7 @@ button:hover {
     width: 320px;
 }
 
-
 .swiper>.pagination {
     position: relative;
     margin-top: var(--main-page-padding);
-}
-
-.test-slider-item {
-    border: 1px solid red;
-    width: 238px;
-    height: 70px;
 }

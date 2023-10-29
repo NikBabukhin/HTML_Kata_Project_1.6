@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="styles/style.css">
-
-    <script src="script.js" defer></script>
-
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <script src="burger.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="swiper.js" defer></script>
+    <script src="showMore.js" defer></script>
+
 
     <title>Kata HTML Project</title>
 </head>
@@ -125,9 +126,7 @@
         <div class="section__content only-mobile">
             <!--        Slider-->
             <div class="swiper transparent-helper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="company-card">
                             <div class="company-card__logo">
@@ -219,11 +218,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination pagination"></div>
             </div>
             <!--        End of slider-->
         </div>
+        <div class="section__content except-mobile">
+            <div class="brands-wrapper" id="brands-wrapper-except-mobile">
+            </div>
+        </div>
+        <button id="add">Add</button>
     </section>
 </main>
 
