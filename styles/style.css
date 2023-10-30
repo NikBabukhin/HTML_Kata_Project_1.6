@@ -367,6 +367,14 @@ button:hover {
     margin-bottom: 16px;
 }
 
+.show-more__button-image {
+    transition: transform .2s linear;
+}
+
+.show-more__button-image--down {
+    transform: rotate3d(1,0,0, 180deg);
+}
+
 
 .show-more__button-text {
     padding: 0 0 0 8px;

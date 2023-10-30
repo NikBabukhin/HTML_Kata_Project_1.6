@@ -45,11 +45,14 @@ const showLess = (initialCount, finalCount) => {
 const onClickHandler = (initialSlidesLength, allProductsLength) => {
     const currentLength = wrapper.children.length;
     const buttonSpan = buttonShow.querySelector('.show-more__button-text')
+    const arrowImage = buttonShow.querySelector('.show-more__button-image')
     if (currentLength>=allProductsLength) {
         buttonSpan.textContent = 'Показать все';
+        arrowImage.classList.remove('show-more__button-image--down')
         return showLess(initialSlidesLength, allProductsLength)
     } else {
         buttonSpan.textContent = 'Скрыть';
+        arrowImage.classList.add('show-more__button-image--down')
         return showMore(initialSlidesLength, allProductsLength, wrapper)
     }
 }
