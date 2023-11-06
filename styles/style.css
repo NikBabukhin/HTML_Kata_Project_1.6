@@ -407,20 +407,25 @@ button:hover {
 }
 
 .brands-wrapper {
-    padding: var(--main-page-padding);
+    padding: var(--main-page-padding) var(--main-page-padding) 0 0;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, 224px);
-    grid-template-rows: 72px 72px 0;
-    grid-gap: 16px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 0;
+    overflow-y: hidden;
     justify-content: space-around;
-    overflow: hidden;
 }
 
-.brands-wrapper:after {
-    content: "";
-    flex: auto;
+.show {
+    overflow-y: auto;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
 }
 
+.brands-wrapper>li {
+    margin: 8px;
+}
 
 .company-card {
     padding: 0 16px;
@@ -438,13 +443,8 @@ button:hover {
     margin: auto 0;
 }
 
-/*.company-card--laptop {*/
-/*    margin-right: var(--main-page-padding);*/
-/*    margin-bottom: var(--main-page-padding);*/
-/*}*/
-
 .section__button {
-    padding-left: var(--main-page-padding);
+    padding: var(--main-page-padding);
 }
 
 /* Burger menu (aside)*/
