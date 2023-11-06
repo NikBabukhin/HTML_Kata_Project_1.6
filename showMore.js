@@ -16,13 +16,13 @@ const createNewCard = (element, imageSrc) => {
     cardLogo.classList.add('company-card__logo')
     cardLogo.innerHTML = `<img src="src/brands/${imageSrc}.png" alt="brand image">`
 
-    const cardButton = document.createElement('button')
-    cardButton.classList.add('header-button')
-    cardButton.classList.add('go-background')
-    cardButton.innerHTML = `<a href="https://github.com/NikBabukhin/" target="_blank"></a>`
+    const cardLink = document.createElement('a')
+    cardLink.classList.add('header-button')
+    cardLink.classList.add('go-background')
+    cardLink.innerHTML = `<a href="https://github.com/NikBabukhin/" target="_blank"></a>`
 
     productCard.appendChild(cardLogo)
-    productCard.appendChild(cardButton)
+    productCard.appendChild(cardLink)
 
     element.appendChild(productCard)
 }
@@ -45,14 +45,13 @@ const showLess = (initialCount, finalCount) => {
 const onClickHandler = (initialSlidesLength, allProductsLength) => {
     const currentLength = wrapper.children.length;
     const buttonSpan = buttonShow.querySelector('.show-more__button-text')
-    const arrowImage = buttonShow.querySelector('.show-more__button-image')
     if (currentLength>=allProductsLength) {
         buttonSpan.textContent = 'Показать все';
-        arrowImage.classList.remove('show-more__button-image--down')
+        buttonShow.classList.remove('down')
         return showLess(initialSlidesLength, allProductsLength)
     } else {
+        buttonShow.classList.add('down')
         buttonSpan.textContent = 'Скрыть';
-        arrowImage.classList.add('show-more__button-image--down')
         return showMore(initialSlidesLength, allProductsLength, wrapper)
     }
 }

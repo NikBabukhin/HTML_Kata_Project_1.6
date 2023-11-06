@@ -365,19 +365,20 @@ button:hover {
     letter-spacing: -0.2px;
     color: var(--black-font-color);
     margin-bottom: 16px;
-}
-
-.show-more__button-image {
+    position: relative;
     transition: transform .2s linear;
 }
 
-.show-more__button-image--down {
-    transform: rotate3d(1,0,0, 180deg);
+.show-more__button:before {
+    content:'';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../src/image/expand.svg") no-repeat;
 }
 
-
 .show-more__button-text {
-    padding: 0 0 0 8px;
+    padding: 0 0 0 32px;
 }
 
 .office-image {
@@ -407,10 +408,12 @@ button:hover {
 
 .brands-wrapper {
     padding: var(--main-page-padding);
-    display: grid; /* 1 */
-    grid-template-columns: repeat(auto-fill, 224px); /* 2 */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 224px);
+    grid-template-rows: 72px 72px 0;
     grid-gap: 16px;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .brands-wrapper:after {
