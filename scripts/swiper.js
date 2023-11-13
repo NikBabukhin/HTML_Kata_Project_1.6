@@ -1,4 +1,6 @@
-new Swiper('.swiper', {
+import Swiper from "swiper";
+
+export const swiper = new Swiper('.swiper', {
     spaceBetween: 16,
     width: 240,
     height: 72,

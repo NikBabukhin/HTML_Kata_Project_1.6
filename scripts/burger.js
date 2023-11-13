@@ -1,25 +1,18 @@
-const closeBurger = () => {
+export const closeBurger = () => {
     burgerMenu.classList.remove('burger-open')
     blurArea.classList.remove('aside--open')
 }
-const openBurger = () => {
+export const openBurger = () => {
     burgerMenu.classList.add('burger-open')
     blurArea.classList.add('aside--open')
 }
 
 
-const blurArea = document.querySelector('.aside')
-const burgerMenu = document.getElementById("burger_menu")
-const burgerCloseButton = document.getElementById("burger_close")
-const burgerOpenButton = document.getElementById("burger_open")
+export const blurArea = document.querySelector('.aside')
+export const burgerMenu = document.getElementById("burger_menu")
+export const burgerCloseButton = document.getElementById("burger_close")
+export const burgerOpenButton = document.getElementById("burger_open")
 
-
-burgerMenu.addEventListener('click', (e) => {
-    e.stopPropagation()
-})
-burgerCloseButton.addEventListener('click', closeBurger)
-burgerOpenButton.addEventListener('click', openBurger)
-blurArea.addEventListener('click', () => closeBurger())
 
 
 
