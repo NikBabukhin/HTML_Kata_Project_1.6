@@ -132,31 +132,31 @@ button:hover {
 
 /* Background images for buttons */
 .burger-background {
-    background: url("../src/image/burger.svg");
+    background: url("../src/assets/image/burger.svg");
 }
 .call-background {
-    background: url("../src/image/call.svg");
+    background: url("../src/assets/image/call.svg");
 }
 .chat-background {
-    background: url("../src/image/chat.svg");
+    background: url("../src/assets/image/chat.svg");
 }
 .profile-background {
-    background: url("../src/image/profile.svg");
+    background: url("../src/assets/image/profile.svg");
 }
 .repair-background {
-    background: url("../src/image/repair.svg");
+    background: url("../src/assets/image/repair.svg");
 }
 .checkstatus-background {
-    background: url("../src/image/checkstatus.svg");
+    background: url("../src/assets/image/checkstatus.svg");
 }
 .close-background {
-    background: url("../src/image/burgerClose.svg");
+    background: url("../src/assets/image/burgerClose.svg");
 }
 .search-background {
-    background: url("../src/image/search.svg");
+    background: url("../src/assets/image/search.svg");
 }
 .go-background {
- background: url("../src/image/go.svg");
+ background: url("../src/assets/image/go.svg");
 }
 /* End of background images for buttons */
 
