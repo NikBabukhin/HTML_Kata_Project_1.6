@@ -1,6 +1,7 @@
 import {brandsWrapper, buttonShowMore, showMoreClickHandler} from "./showMore";
 import {blurArea, burgerCloseButton, burgerMenu, burgerOpenButton, closeBurger, openBurger} from "./burger";
-import {swiper} from "./swiper";
+import '/styles/style.css';
+
 
 buttonShowMore.addEventListener('click', ()=>showMoreClickHandler(brandsWrapper))
 
@@ -12,5 +13,5 @@ burgerCloseButton.addEventListener('click', closeBurger)
 burgerOpenButton.addEventListener('click', openBurger)
 blurArea.addEventListener('click', () => closeBurger())
 
-console.log(swiper)
+
 

@@ -1,31 +1,31 @@
 /* Fonts */
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./fonts/TTLakes-Bold.eot');
+    src: url('fonts/TTLakes-Bold.eot');
     src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-    url('./fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/TTLakes-Bold.woff') format('woff'),
-    url('./fonts/TTLakes-Bold.ttf') format('truetype');
+    url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Bold.woff') format('woff'),
+    url('fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./fonts/TTLakes-Medium.eot');
+    src: url('fonts/TTLakes-Medium.eot');
     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-    url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/TTLakes-Medium.woff') format('woff'),
-    url('./fonts/TTLakes-Medium.ttf') format('truetype');
+    url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Medium.woff') format('woff'),
+    url('fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./fonts/TTLakes-Regular.eot');
+    src: url('fonts/TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-    url('./fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/TTLakes-Regular.woff') format('woff'),
-    url('./fonts/TTLakes-Regular.ttf') format('truetype');
+    url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Regular.woff') format('woff'),
+    url('fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -132,31 +132,31 @@ button:hover {
 
 /* Background images for buttons */
 .burger-background {
-    background: url("../src/assets/image/burger.svg");
+    background: url("../assets/images/burger.svg");
 }
 .call-background {
-    background: url("../src/assets/image/call.svg");
+    background: url("../assets/images/call.svg");
 }
 .chat-background {
-    background: url("../src/assets/image/chat.svg");
+    background: url("../assets/images/chat.svg");
 }
 .profile-background {
-    background: url("../src/assets/image/profile.svg");
+    background: url("../assets/images/profile.svg");
 }
 .repair-background {
-    background: url("../src/assets/image/repair.svg");
+    background: url("../assets/images/repair.svg");
 }
 .checkstatus-background {
-    background: url("../src/assets/image/checkstatus.svg");
+    background: url("../assets/images/checkstatus.svg");
 }
 .close-background {
-    background: url("../src/assets/image/burgerClose.svg");
+    background: url("../assets/images/burgerClose.svg");
 }
 .search-background {
-    background: url("../src/assets/image/search.svg");
+    background: url("../assets/images/search.svg");
 }
 .go-background {
- background: url("../src/assets/image/go.svg");
+ background: url("../assets/images/go.svg");
 }
 /* End of background images for buttons */
 
@@ -382,7 +382,7 @@ button:hover {
 }
 
 .office-image {
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -716,7 +716,6 @@ button:hover {
 
 .swiper-wrapper {
     padding-left: var(--main-page-padding);
-    width: 320px;
 }
 
 .swiper>.pagination {
