@@ -381,6 +381,14 @@ button:hover {
     padding: 0 0 0 9px;
 }
 
+.show-more__button-image {
+    transition: all .2s linear;
+}
+
+.show-more__button-image-reverse {
+    transform: rotate3d(1,0,0, 180deg);
+}
+
 .office-image {
     width: 100%;
 }
@@ -406,29 +414,6 @@ button:hover {
     margin: 0;
 }
 
-.brands-wrapper {
-    padding: var(--main-page-padding);
-    padding-bottom: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 224px);
-    grid-template-rows: repeat(2, 1fr);
-    grid-auto-rows: 0;
-    gap: 0 16px;
-    overflow-y: hidden;
-    justify-content: space-around;
-}
-
-.show {
-    overflow-y: auto;
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-}
-
-.brands-wrapper>li {
-    margin: 8px 0;
-}
-
 .company-card {
     padding: 0 16px;
     display: flex;
@@ -444,6 +429,10 @@ button:hover {
 .company-card__logo {
     display: block;
     margin: auto 0;
+}
+
+.section__content {
+    position: relative;
 }
 
 .section__button {
@@ -628,6 +617,8 @@ button:hover {
     .office-image {
         border-radius: 5px;
         padding-right: var(--main-page-padding);
+        width: 530px;
+        height: 307px;
     }
 
     .only-mobile {
@@ -667,6 +658,12 @@ button:hover {
     .only-mobile {
         display: none;
     }
+    .office-image {
+        border-radius: 5px;
+        padding-right: var(--main-page-padding);
+        width: 360px;
+        height: 208px;
+    }
 }
 @media (min-width: 1120px) {
     :root {
@@ -704,21 +701,47 @@ button:hover {
 
 
 /*Swiper slider*/
-.swiper {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-}
 
 .swiper-slide {
     margin-top: var(--main-page-padding);
+    min-width: 224px;
+    min-height: 72px;
 }
 
 .swiper-wrapper {
+    padding-right: var(--main-page-padding);
     padding-left: var(--main-page-padding);
 }
 
 .swiper>.pagination {
     position: relative;
     margin-top: var(--main-page-padding);
+}
+
+@media (min-width: 768px) {
+    .brands-wrapper {
+        padding: var(--main-page-padding);
+        padding-bottom: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 224px);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: 0;
+        gap: 0 16px;
+        overflow-y: hidden;
+        justify-content: space-around;
+    }
+
+    .show {
+        overflow-y: auto;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+    }
+
+    .swiper-wrapper {
+        width: auto;
+    }
+    .brands-wrapper>li {
+        margin: 8px 0;
+    }
 }

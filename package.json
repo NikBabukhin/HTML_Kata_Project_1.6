@@ -21,6 +21,7 @@
   "author": "Nikolai Babukhin",
   "license": "ISC",
   "dependencies": {
+    "sass": "^1.69.5",
     "swiper": "^11.0.4"
   }
 }
