@@ -1,8 +1,54 @@
 @import "src/styles/main/page-header/page-header";
+@import "src/styles/main/page-content/page-content";
+@import "src/styles/main/section/section";
+
 
 .main {
   width: 100%;
   padding: 24px 0;
   box-sizing: border-box;
   position: absolute;
+}
+
+.main__nav {
+  padding: 24px 0 24px var(--main-page-padding);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.horizontal {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+  margin: 0;
+  word-wrap: normal;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+.horizontal__item {
+  border: 2px solid var(--main-bg-color);
+  border-radius: 6px;
+}
+.horizontal__item-active {
+  background-color: var(--main-bg-color-white);
+  border-color: var(--border-blue);
+}
+
+.horizontal__item-text {
+  font-family: inherit;
+  font-weight: 400;
+  padding: 8px 9px 8px 17px;
+  height: 36px;
+  box-sizing: border-box;
+  background-color: inherit;
+  border: none;
+  font-size: var(--main-font-size-normal);
+  color: var(--grey-font-color);
+  white-space: nowrap;
 }

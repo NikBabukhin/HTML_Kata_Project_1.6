@@ -1,0 +1,46 @@
+.swiper-slide {
+  margin-top: var(--main-page-padding);
+  min-width: 224px;
+  min-height: 72px;
+}
+
+.swiper-wrapper {
+  padding-right: var(--main-page-padding);
+  padding-left: var(--main-page-padding);
+}
+
+.swiper {
+  .pagination {
+    position: relative;
+    margin-top: var(--main-page-padding);
+  }
+}
+
+@media (min-width: 760px) {
+  .brands-wrapper {
+    padding: var(--main-page-padding);
+    padding-bottom: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 224px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 0;
+    gap: 0 16px;
+    overflow-y: hidden;
+    justify-content: space-around;
+  }
+
+  .show {
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+  }
+
+  .swiper-wrapper {
+    width: auto;
+  }
+  .brands-wrapper {
+    li {
+      margin: 8px 0;
+    }
+  }
+}

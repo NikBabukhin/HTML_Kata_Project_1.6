@@ -15,3 +15,21 @@
   --main-font-size-normal: 16px;
   --main-font-size-small-normal: 14px;
 }
+
+@media (max-width: 759px) {
+  :root {
+    --main-page-padding: 16px;
+  }
+}
+
+@media (max-width: 1119px) and (min-width: 760px) {
+  :root {
+    --main-page-padding: 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  :root {
+    --main-page-padding: 32px;
+  }
+}

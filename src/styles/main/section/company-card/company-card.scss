@@ -1,0 +1,16 @@
+.company-card {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-color-white);
+  border-radius: 5px;
+  height: 72px;
+  min-width: 192px;
+  border: 1px solid #EAEAEA;
+}
+
+.company-card__logo {
+  display: block;
+  margin: auto 0;
+}

@@ -1,0 +1,28 @@
+@import "src/styles/main/section/company-card/company-card";
+
+.section {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.section__title {
+  padding: var(--main-page-padding);
+  background: linear-gradient(90deg, var(--main-bg-color) 1%, var(--main-bg-color-white) 100%);
+  border-top: 1px solid var(--border-lightBlue);
+}
+
+.section__title-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+
+.section__content {
+  position: relative;
+}
+
+.section__button {
+  padding: var(--main-page-padding);
+}
