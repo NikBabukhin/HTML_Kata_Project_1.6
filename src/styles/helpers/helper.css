@@ -1,0 +1,45 @@
+/* Main styles*/
+.body {
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: "TT Lakes", sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Visual helpers */
+.transparent-helper:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, rgba(248, 248, 248, 0) 0%, rgb(248, 248, 248) 100%);
+  width: 24px;
+  height: 100%;
+  z-index: 100;
+  right: 0;
+}
+
+.transparent-helper__right:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, rgb(248, 248, 248), rgba(248, 248, 248, 0));
+  width: 40px;
+  height: 100%;
+  z-index: 100;
+  top: 10%;
+}
+
+/* Background icons for buttons */
+
+/*# sourceMappingURL=helper.css.map */

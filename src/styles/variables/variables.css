@@ -1,0 +1,16 @@
+/* Variables color */
+:root {
+  --main-bg-color: #F8F8F8;
+  --main-blue-color: #41F6D7;
+  --main-bg-color-white: #FFFFFF;
+  --border-blue: #B8FFEC;
+  --border-lightBlue: #D9FFF5;
+  --pseudo-line-grey: #EAEAEA;
+  --black-font-color: #1B1C21;
+  --grey-font-color: #7E7E82;
+  --main-header-h1-font-size: 28px;
+  --main-font-size-normal: 16px;
+  --main-font-size-small-normal: 14px;
+}
+
+/*# sourceMappingURL=variables.css.map */

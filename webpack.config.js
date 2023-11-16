@@ -12,7 +12,7 @@ module.exports = {
     },
     output: {
         filename: '[name].[contenthash].js',
-        assetModuleFilename: "./images/[name][ext]",
+        // assetModuleFilename: "./icons/[name][ext]",
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
@@ -22,21 +22,21 @@ module.exports = {
             patterns: [
                 {
                     from: path.resolve(__dirname, 'src/assets/images'),
-                    to:   path.resolve(__dirname, 'dist/images')
+                    to: path.resolve(__dirname, 'dist/icons/')
                 },
-                {
-                    from: path.resolve(__dirname, 'src/assets/images/brands'),
-                    to:   path.resolve(__dirname, 'dist/images/brands')
-                }
             ]
         })
     ],
     module: {
         rules: [
             {
+                test: /\.s[ac]ss$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
-            },
+            }
         ]
     }
 }

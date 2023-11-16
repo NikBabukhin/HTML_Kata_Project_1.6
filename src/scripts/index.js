@@ -1,6 +1,6 @@
 import {brandsWrapper, buttonShowMore, showMoreClickHandler} from "./showMore";
 import {blurArea, burgerCloseButton, burgerMenu, burgerOpenButton, closeBurger, openBurger} from "./burger";
-import '/styles/style.css';
+import '/styles/style.scss';
 
 
 buttonShowMore.addEventListener('click', ()=>showMoreClickHandler(brandsWrapper))

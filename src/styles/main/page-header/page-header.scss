@@ -1,0 +1,28 @@
+.page-header {
+  padding-left: var(--main-page-padding);
+}
+
+.page-header-text {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: var(--main-header-h1-font-size);
+  color: var(--black-font-color);
+  letter-spacing: -0.6px;
+  position: relative;
+  display: table-cell;
+  height: 40px;
+  vertical-align: middle;
+
+  &:before {
+    content: "";
+    background-color: var(--main-blue-color);
+    height: 40px;
+    width: 4px;
+    position: absolute;
+    left: calc(-1 * var(--main-page-padding));
+    top: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
