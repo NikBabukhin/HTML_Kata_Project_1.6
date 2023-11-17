@@ -1,0 +1,28 @@
+.service {
+  margin: 0;
+}
+
+.service__item {
+  min-width: 224px;
+  height: 160px;
+  background-color: var(--main-bg-color-white);
+  border: 1px solid var(--pseudo-line-grey);
+  border-radius: 6px;
+  padding: 16px;
+  box-sizing: border-box;
+
+}
+
+.service__item--title {
+  font-size: var(--main-font-size-normal);
+  font-weight: 500;
+  margin: 0;
+}
+
+.service__item--icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 17px;
+  right: 17px;
+}
