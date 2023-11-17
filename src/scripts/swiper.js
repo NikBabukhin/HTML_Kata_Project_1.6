@@ -31,7 +31,7 @@ function swiperCard() {
             })
         }
     } else if (init) {
-        swiper.destroy();
+        swiper.forEach(el => el.destroy(true, true))
         init = false;
     }
 }

@@ -1,11 +1,6 @@
-export const brandsWrapper = document.getElementById('brands-wrapper-except-mobile')
-export const buttonShowMore = document.getElementById('add-brands')
-export const buttonShowMoreImage = buttonShowMore.querySelector('.show-more__button-image')
-
-export const showMoreClickHandler = (showElement) => {
-    const buttonSpan = buttonShowMore.querySelector('.show-more__button-text')
+export const showMoreClickHandler = (showElement, buttonElement) => {
+    const buttonSpan = buttonElement.querySelector('.show-more__button-text')
     buttonSpan.textContent = buttonSpan.textContent === 'Скрыть' ? 'Показать все' : 'Скрыть';
-    buttonShowMoreImage.classList.toggle('show-more__button-image-reverse')
-    console.log('toggled')
+    buttonElement.querySelector('.show-more__button-image').classList.toggle('show-more__button-image-reverse');
     showElement.classList.toggle('show')
 }

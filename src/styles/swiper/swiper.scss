@@ -1,10 +1,7 @@
-.swiper-slide {
-  margin-top: var(--main-page-padding);
-}
-
 .swiper-wrapper {
   padding-right: var(--main-page-padding);
   padding-left: var(--main-page-padding);
+  margin-top: var(--main-page-padding);
 }
 
 .swiper {
@@ -36,6 +33,7 @@
   .swiper-wrapper {
     width: auto;
   }
+
   .brands-wrapper {
     li {
       margin: 8px 0;
