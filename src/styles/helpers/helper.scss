@@ -1,9 +1,18 @@
 /* Main styles*/
-.body {
+body {
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.body {
+  width: 100%;
   min-width: 320px;
   font-family: 'TT Lakes', sans-serif;
-  background-color: var(--main-bg-color);
 }
 
 a {

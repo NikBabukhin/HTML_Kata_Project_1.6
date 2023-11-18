@@ -47,3 +47,37 @@
 .office-image {
   width: 100%;
 }
+
+.hidden-text {
+  display: none;
+}
+
+.show-full-text {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .show-laptop {
+    display: none;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1119px) and (min-width: 720px) {
+  .show-laptop {
+    display: block;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+  .show-desktop {
+    display: block;
+  }
+}

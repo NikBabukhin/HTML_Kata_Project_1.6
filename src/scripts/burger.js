@@ -1,10 +1,12 @@
 export const closeBurger = () => {
     burgerMenu.classList.remove('burger-open')
     blurArea.classList.remove('aside--open')
+    document.querySelector('body').classList.remove('no-scroll')
 }
 export const openBurger = () => {
     burgerMenu.classList.add('burger-open')
     blurArea.classList.add('aside--open')
+    document.querySelector('body').classList.add('no-scroll')
 }
 
 
