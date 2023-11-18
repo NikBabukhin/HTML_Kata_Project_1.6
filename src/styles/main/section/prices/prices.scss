@@ -1,0 +1,92 @@
+.price {
+  p {
+    margin: 0;
+  }
+
+}
+
+.price-card {
+  background-color: var(--main-bg-color-white);
+  border-radius: 6px;
+  width: 260px;
+  height: 200px;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.price-card__item--title {
+  color: var(--grey-font-color);
+  font-size: var(--main-font-size-small-normal);
+  letter-spacing: 0.2px;
+}
+
+.price-card__item--description {
+  font-size: var(--main-font-size-small-normal);;
+  letter-spacing: 0.2px;
+}
+
+.price-card__item {
+  margin-bottom: 16px;
+}
+
+.price__item--buy {
+  height: 32px;
+  width: 119px;
+  border-radius: 16px;
+  background-color: var(--main-pink-color);
+  border: none;
+  text-transform: uppercase;
+  color: var(--main-bg-color-white);
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-size: 12px;
+  letter-spacing: -0.15px;
+  font-weight: 600;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 12px;
+  background-image: url("icons/goside.svg");
+  background-position: bottom 4px right 8px;
+  background-repeat: no-repeat;
+  font-family: inherit;
+  transition: .2s all linear;
+
+  &:hover {
+    background-color: var(--main-bg-color-white);
+    color: var(--main-pink-color);
+  }
+
+  &:active {
+    background-color: var(--main-bg-color-white);
+    color: var(--main-pink-color);
+    scale: 1.1;
+  }
+}
+
+.section__content--description {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--main-page-padding);
+  padding-top: var(--main-page-padding);
+  padding-bottom: 40px;
+
+  p {
+    margin: 0;
+    padding-bottom: 16px;
+    display: inline-block;
+    max-width: 421px;
+    font-size: var(--main-font-size-small-normal);
+    color: var(--black-font-color);
+    font-weight: 400;
+  }
+
+  a {
+    max-width: 320px;
+    display: flex;
+    font-size: var(--main-font-size-normal);
+    align-items: center;
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--main-bg-color);
+  display: flex;
+  padding: 16px var(--main-page-padding);
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border-top: 1px solid var(--main-blue-color);
+
+  p {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: var(--main-font-size-small-normal);
+    color: var(--grey-font-color)
+  }
+}
