@@ -59,11 +59,9 @@ for (let i=0;i<openFeedbackArrayButtons.length;i++) {
 }
 
 modalCloseCall.addEventListener('click', ()=>{
-    console.log('close call')
     closeModalWindow(modalCall, 'modal-open')
 })
 modalCloseFeedback.addEventListener('click', ()=>{
-    console.log('close feedback')
     closeModalWindow(modalFeedback, 'modal-open')
 })
 
