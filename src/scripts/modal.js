@@ -6,8 +6,6 @@ export const openModalWindow = (modal, openClassName) => {
 }
 
 export const closeModalWindow = (modal, openClassName) => {
-    console.log(modal)
-    console.log('close')
     modal.classList.remove(openClassName)
     document.querySelector('.main-content-wrapper').classList.remove('no-scroll')
     document.querySelector('.main').classList.remove('no-scroll')
