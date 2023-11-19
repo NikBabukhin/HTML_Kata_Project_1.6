@@ -176,6 +176,35 @@
       text-align: right;
     }
   }
+
+
+  .modal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .modal-open {
+
+  }
+
+  .modal__content {
+    position: absolute;
+    width: 440px;
+    right: 0;
+    top: 0;
+    padding-top: 0;
+    border-left: 1px solid var(--main-blue-color);
+    -webkit-box-shadow: -10px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -10px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: -10px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+
+  .modal__content--close-button {
+    position: absolute;
+    left: -68px;
+    top: 36px
+  }
 }
 
 @media (min-width: 1368px) {
@@ -284,6 +313,7 @@
   .main-content-wrapper {
     overflow-y: scroll;
     height: 100vh;
+    position: relative;
   }
 
   .aside {
