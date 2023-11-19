@@ -12,11 +12,10 @@ module.exports = {
     },
     output: {
         filename: '[name].[contenthash].js',
-        // assetModuleFilename: "./icons/[name][ext]",
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-        new HTMLWebPackPlugin({template: "./index.html", filename: "index-dev.html"}),
+        new HTMLWebPackPlugin({template: "./index.html", filename: "index.html"}),
         new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [
