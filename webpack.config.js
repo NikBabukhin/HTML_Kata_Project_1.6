@@ -12,7 +12,7 @@ module.exports = {
     },
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
     },
     plugins: [
         new HTMLWebPackPlugin({template: "./index.html", filename: "index.html"}),
@@ -21,7 +21,7 @@ module.exports = {
             patterns: [
                 {
                     from: path.resolve(__dirname, 'src/assets/images'),
-                    to: path.resolve(__dirname, 'dist/icons/')
+                    to: path.resolve(__dirname, 'docs/icons/')
                 },
             ]
         })
