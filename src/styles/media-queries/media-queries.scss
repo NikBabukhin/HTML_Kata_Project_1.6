@@ -271,11 +271,11 @@
 
 
   .aside {
-    position: fixed;
+    position: absolute;
     width: 320px;
     height: 100vh;
     top:0;
-    left: 0;
+    left: -304px;
     transition: all 0.1s linear;
     z-index: 50;
     visibility: visible;
@@ -314,11 +314,6 @@
     overflow-y: scroll;
     height: 100vh;
     position: relative;
-  }
-
-  .aside {
-    position: absolute;
-    left: -320px;
   }
 
   .section__content--description {
