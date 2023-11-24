@@ -21,6 +21,7 @@
   display: inline-flex;
   align-items: flex-end;
   padding: 0;
+  gap: 9px;
 
   font-family: inherit;
   font-weight: 500;
@@ -30,10 +31,6 @@
   margin-bottom: 16px;
   position: relative;
   transition: all .2s linear;
-}
-
-.show-more__button-text {
-  padding: 0 0 0 9px;
 }
 
 .show-more__button-image {
