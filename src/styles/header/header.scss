@@ -60,14 +60,7 @@
   list-style: none;
   display: flex;
   padding: 0;
-
-  li {
-    margin-right: 16px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  gap: 16px;
 }
 
 
