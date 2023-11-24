@@ -32,12 +32,8 @@
 
 
 .horizontal__item {
-  border: 2px solid var(--main-bg-color);
-  border-radius: 6px;
-}
-.horizontal__item-active {
-  background-color: var(--main-bg-color-white);
-  border-color: var(--border-blue);
+  display: flex;
+  align-items: center;
 }
 
 .horizontal__item-text {
@@ -51,4 +47,13 @@
   font-size: var(--main-font-size-normal);
   color: var(--grey-font-color);
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.horizontal__item-text--active {
+  border: 2px solid var(--main-blue-color);
+  border-radius: 6px;
+  background-color: var(--main-bg-color-white);
+  overflow: hidden;
 }
