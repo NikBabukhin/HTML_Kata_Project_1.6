@@ -92,3 +92,24 @@
     transform: scale(1.1);
   }
 }
+
+.button-with-text {
+  border: none;
+  color: inherit;
+  padding-right: 48px;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 40px;
+  background-color: var(--main-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--main-font-size-normal);
+  transition: opacity .2s linear, scale .2s linear;
+
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    scale: 1.1;
+  }
+}
