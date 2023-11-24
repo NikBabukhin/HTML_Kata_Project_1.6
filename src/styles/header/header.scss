@@ -71,7 +71,7 @@
   padding: 0;
   width: 40px;
   height: 40px;
-  transition: all 0.2s ease;
+  transition: fill 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 
   a {
     width: 100%;
